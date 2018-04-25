@@ -3,7 +3,6 @@
 
 #include "matrix.hpp"
  
-
 TEST_CASE("creating matrix")
 {
     matrix_t matrix;
