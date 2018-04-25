@@ -160,16 +160,16 @@ TEST_CASE ("operator=")
 {
     std::string input
     {
-        "3, 3\n"
-        "1 1 1\n"
-        "2 2 2\n"
-        "3 3 3" };
-    std::string input2
-    {
-        "3, 3\n"
-        "3 3 3\n"
-        "4 4 4\n"
-        "5 5 5" };
+         "3, 3\n"
+         "1 1 1\n"
+         "1 1 1\n"
+        	"1 1 1" };
+ 	std::string input2
+{
+          "3, 3\n"
+          "2 2 2\n"
+          "2 2 2\n"
+         	"2 2 2" };
     matrix_t matrix1, matrix2;
     std::istringstream istream1{ input };
     std::istringstream istream2{ input2 };
