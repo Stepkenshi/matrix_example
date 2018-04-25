@@ -43,7 +43,7 @@ TEST_CASE("copying matrix")
     std::istringstream istream{ input };
     REQUIRE( matrix.read(istream));
     
-    matrix_t copy(matrix);
+    matrix_t copy();
     REQUIRE( copy.rows() == 3);
     REQUIRE( copy.collumns() == 3);
 }
