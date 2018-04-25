@@ -43,7 +43,7 @@ TEST_CASE("copying matrix")
     std::istringstream istream{ input };
     REQUIRE( matrix.read(istream));
     
-    matrix_t copy();
+    matrix_t copy(matrix);
     REQUIRE( copy.rows() == 3);
     REQUIRE( copy.collumns() == 3);
 }
@@ -137,7 +137,7 @@ TEST_CASE ("operator*")
         "1 1 1\n"
         "1 1 1\n"
         "1 1 1" };
-    std::string input3
+    std::string input2
     {
         "3, 3\n"
         "6 6 6\n"
@@ -150,7 +150,7 @@ TEST_CASE ("operator*")
     REQUIRE(matrix2.read(istream2));
     
     std::ostringstream stream;
-    (matrix1 * matrix2).write( stream );
+    (matrix1 * matrix1).write( stream );
     
     REQUIRE( input3 == stream.str() );
 }
