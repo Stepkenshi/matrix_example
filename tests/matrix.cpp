@@ -49,7 +49,7 @@ TEST_CASE("copying matrix")
     REQUIRE( copy.collumns() == 3);
 }
     
-TEST_CASE("+operator")
+TEST_CASE("operator+")
 {
     std::string input
     {
@@ -87,7 +87,7 @@ TEST_CASE("+operator")
     REQUIRE( input3 == stream.str());
 }
 
-TEST_CASE("-operator")
+TEST_CASE("operator-")
 {
     std::string input
     {
@@ -124,7 +124,7 @@ TEST_CASE("-operator")
     
     REQUIRE( input3 == stream.str());
 }
-TEST_CASE ("*operator")
+TEST_CASE ("operator*")
 {
     std::string input
     {
@@ -156,7 +156,7 @@ TEST_CASE ("*operator")
     REQUIRE( input3 == stream.str() );
 }
 
-TEST_CASE ("=operator")
+TEST_CASE ("operator=")
 {
     std::string input
     {
@@ -183,7 +183,7 @@ TEST_CASE ("=operator")
     REQUIRE( input2 == stream.str() );
 }   
 
-TEST_CASE ("=*operator")
+TEST_CASE ("operator=*")
 {
     std::string input
     {
@@ -216,7 +216,7 @@ TEST_CASE ("=*operator")
     REQUIRE (input3 == stream.str());
 }
 
-TEST_CASE ("=+operator")
+TEST_CASE ("operator=+")
 {
   std::string input{
         "3, 3\n"
@@ -248,7 +248,7 @@ TEST_CASE ("=+operator")
     REQUIRE (input3 == stream.str());
 }
 
-TEST_CASE ("=-operator")
+TEST_CASE ("operator=-")
 {
     std::string input
     {
