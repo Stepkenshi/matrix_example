@@ -247,11 +247,10 @@ TEST_CASE ("operator=+")
     REQUIRE (input3 == stream.str());
 }
 
-TEST_CASE ("operator=-")
+TEST_CASE ("operator-=")
 {
     std::string input
-    {
-        std::string input
+      
         {
         "3, 3\n"
         "2 2 2\n"
