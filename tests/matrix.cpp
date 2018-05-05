@@ -150,7 +150,7 @@ TEST_CASE ("operator*")
     REQUIRE(matrix2.read(istream2));
     
     std::ostringstream stream;
-    (matrix1 * matri2).write( stream );
+    (matrix1 * matrix2).write( stream );
     
     REQUIRE( input3 == stream.str() );
 }
