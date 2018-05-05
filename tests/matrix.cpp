@@ -137,7 +137,7 @@ TEST_CASE ("operator*")
         "1 1 1\n"
         "1 1 1\n"
         "1 1 1" };
-    std::string input2
+    std::string input3
     {
         "3, 3\n"
         "6 6 6\n"
